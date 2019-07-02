@@ -2,6 +2,26 @@
 
 The files in this repository branch are my in-class examples. Additionally, you can find online notes at the course's [Moodle site](https://moodle.nait.ca) and on the unofficial [website notes](https://dmit-2018.github.io). Also be sure to checkout out the [**Learning Outcomes**](https://dmit-2018.github.io/about/LOGs.html) that I use in class.
 
+## Outline
+
+The general topics in this workbook include
+
+- **Version Control** - [git and GitHub](src/Version Control/)
+- **Entity Framework**
+  - Review - [West Wind Console](src/EF6 Recap/)
+  - Navigation Properties - [West Wind Console](src/EF6 Recap/)
+  - Transactions
+- [**Databound Controls**](src/Databounc Controls/)
+  - GridView customizations
+  - ListView
+  - Repeater
+- [**LINQ**](src/LinqPad/)
+- **CQRS**
+- **Security** - ASP.Net Identity
+- **UX and Forms**
+
+## Software & Resources
+
 Recommended tools for this course include:
 
 - [Visual Studio 2017, Community Edition](https://visualstudio.microsoft.com/)
