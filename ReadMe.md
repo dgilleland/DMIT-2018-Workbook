@@ -20,6 +20,8 @@ The general topics in this workbook include
 - **Security** - ASP.Net Identity
 - **UX and Forms**
 
+----
+
 ## Software & Resources
 
 Recommended tools for this course include:
