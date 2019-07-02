@@ -6,12 +6,12 @@ The files in this repository branch are my in-class examples. Additionally, you 
 
 The general topics in this workbook include
 
-- **Version Control** - [git and GitHub](src/Version Control/)
+- **Version Control** - [git and GitHub](src/Version%20Control/)
 - **Entity Framework**
   - Review - [West Wind Console](src/EF6 Recap/)
-  - Navigation Properties - [West Wind Console](src/EF6 Recap/)
+  - Navigation Properties - [West Wind Console](src/EF6%20Recap/)
   - Transactions
-- [**Databound Controls**](src/Databounc Controls/)
+- [**Databound Controls**](src/Databound%20Controls/)
   - GridView customizations
   - ListView
   - Repeater
