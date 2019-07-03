@@ -8,7 +8,7 @@ The general topics in this workbook include
 
 - **Version Control** - [git and GitHub](src/Version%20Control/)
 - **Entity Framework**
-  - Review - [West Wind Console](src/EF6 Recap/)
+  - Review - [West Wind Console](src/EF6%20Recap/)
   - Navigation Properties - [West Wind Console](src/EF6%20Recap/)
   - Transactions
 - [**Databound Controls**](src/Databound%20Controls/)
