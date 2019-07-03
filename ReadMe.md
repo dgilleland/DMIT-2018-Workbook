@@ -40,3 +40,7 @@ Other recommended resources include:
 
 - [Learn Markdown](https://commonmark.org/help/)
 - [Programming Fundamentals - An Object-Oriented Introduction to Programming in C#](https://programming-0101.github.io/TheBook/)
+
+Advanced resources outside the scope of this course include:
+
+- [Azure Developer Tools](https://azureforeducation.microsoft.com/devtools) - Sign in with your school-issued email address to get access to the free resources offered by Microsoft.
