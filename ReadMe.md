@@ -30,7 +30,7 @@ The comprehensive example that demonstrates the topics in the course are found i
 
 Recommended tools for this course include:
 
-- [Visual Studio 2017, Community Edition](https://visualstudio.microsoft.com/)
+- [Visual Studio 2019, Community Edition](https://visualstudio.microsoft.com/)
 - SQL Server 2017, Developer Edition (available through [Microsoft Imagine](https://e5.onthehub.com/WebStore/OfferingDetails.aspx?o=32dd97ce-e6ad-e711-80f7-000d3af41938&ws=3511aead-a58b-e011-969d-0030487d8897&vsro=8))
 - [GitHub Desktop](https://desktop.github.com)
 - [Visual Studio Code](https://code.visualstudio.com)
