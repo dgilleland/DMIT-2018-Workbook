@@ -26,7 +26,7 @@ The comprehensive example that demonstrates the topics in the course are found i
 
 ----
 
-## Software & Resources ![Software et.al.](./docs/code.png)
+## ![Software et.al.](./docs/code.png) Software & Resources
 
 Recommended tools for this course include:
 
