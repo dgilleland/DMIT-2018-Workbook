@@ -15,4 +15,4 @@ There are a number of learning resources created by GitHub and those in the GitH
 
 ## Code in Your Repository
 
-We use git repositories to store snapshots of our code as a regular part of developing software. Here, we expand on the last tutorial to make a simple C# console application to help with setting up our repositories with the `.gitignore` and `.gitattributes` files. This tutorial assumes that you already have a basic understanding of C# and object-oriented programming principles. [Begin here...](repo.html)
+We use git repositories to store snapshots of our code as a regular part of developing software. Here, we expand on the last tutorial to make a simple C# console application to help with setting up our repositories with the `.gitignore` and `.gitattributes` files. This tutorial assumes that you already have a basic understanding of C# and object-oriented programming principles. [Begin here...](repo.md)
