@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Capstone
+namespace Capstone.Projects
 {
     public partial class TeamSetup : System.Web.UI.Page
     {

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Capstone {
+namespace Capstone.Projects {
     
     
     public partial class TeamSetup {
