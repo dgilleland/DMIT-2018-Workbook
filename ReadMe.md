@@ -8,7 +8,7 @@ Additionally, you can find online notes at the course's [Moodle site](https://mo
 
 The comprehensive example that demonstrates the topics in the course are found in the [West Wind Demo](src/West%20Wind%20Demo/) solution. Additional demos for the general topics in this workbook include the following.
 
-- **Version Control** - [git and GitHub](src/Version%20Control/)
+- **Version Control** - [git and GitHub](src/VersionControl/)
 - **Entity Framework**
   - Review - [West Wind Console](src/EF6%20Recap/)
   - Navigation Properties - [West Wind Console](src/EF6%20Recap/)
