@@ -79,7 +79,7 @@
 
     <hr />
 
-    <h2>Searching Courses</h2>
+    <h2>Searching Courses <small>Cascading Drop-Downs</small></h2>
 
     <%--TODO: Cascading drop-downs--%>
     <asp:DropDownList ID="CourseDropDownList" runat="server"

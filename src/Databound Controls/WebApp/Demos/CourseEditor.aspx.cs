@@ -17,7 +17,7 @@ namespace WebApp.Demos
             // Clean up
             GridViewEventInfo.Text = string.Empty;
 
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 PopulateAssignments(null);
             }
@@ -38,13 +38,13 @@ namespace WebApp.Demos
         {
             // Loop through all the items in the ListView, and add them back to
             // our List<WeightedItem> field.
-            foreach(ListViewDataItem item in AssignmentsList.Items)
+            foreach (ListViewDataItem item in AssignmentsList.Items)
             {
                 // Use the item to find the control that has the data we want
                 var nameLabel = item.FindControl("AssignmentTitle") as Label;
                 var weightLabel = item.FindControl("Weight") as Label;
 
-                if(nameLabel != null && weightLabel != null)
+                if (nameLabel != null && weightLabel != null)
                 {
                     var existing = new WeightedItem
                     {
@@ -77,19 +77,19 @@ namespace WebApp.Demos
         protected void AddCourse_Click(object sender, EventArgs e)
         {
             MessageUserControl.TryRun(() =>
-           {
-                // 1) Extract the data from the form
-                DateTime start;
+            {
+               // 1) Extract the data from the form
+               DateTime start;
                DateTime.TryParse(StartsOn.Text, out start);
                var courseInfo = new CourseOffering(CourseName.Text, start);
 
                RetrieveAssignments();
 
-                // 2) Send the data to the BLL for processing
-                var controller = new StudentGradesController();
+               // 2) Send the data to the BLL for processing
+               var controller = new StudentGradesController();
                controller.CreateCourse(courseInfo, 7, Assignments);
                Courses.DataBind();
-           }, "Course Added", $"Successfully added the {CourseName.Text} course");
+            }, "Course Added", $"Successfully added the {CourseName.Text} course");
         }
 
         protected void Courses_SelectedIndexChanging(object sender, GridViewSelectEventArgs e)
@@ -103,7 +103,7 @@ namespace WebApp.Demos
             // our chance to do something AFTER the change takes place
             GridViewEventInfo.Text += $"Changed Event - {Courses.SelectedDataKey.Value}<br />";
             GridViewEventInfo.Text += "<ul>";
-            foreach(var item in Courses.SelectedDataKey.Values.Values)
+            foreach (var item in Courses.SelectedDataKey.Values.Values)
             {
                 GridViewEventInfo.Text += $"<li>{item}</li>";
             }
@@ -124,7 +124,7 @@ namespace WebApp.Demos
         protected void CourseDropDownList_SelectedIndexChanged(object sender, EventArgs e)
         {
             // Take the info from this drop-down and use it to get data for the next drop-down
-            if(CourseDropDownList.SelectedIndex > 0)
+            if (CourseDropDownList.SelectedIndex > 0)
             {
                 var controller = new StudentGradesController();
                 AssignmentDropDownList.DataSource = controller.ListAssignments(CourseDropDownList.SelectedValue);
