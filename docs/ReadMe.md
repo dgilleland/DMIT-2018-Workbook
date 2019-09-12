@@ -1,5 +1,5 @@
 # Using This Workbook
 
-## ![Demos](./code.png) Demos
+## ![Demos](./images/code.png) Demos
 
-## ![Practice](./tasks.png) Practice Problems
+## ![Practice](./images/tasks.png) Practice Problems
