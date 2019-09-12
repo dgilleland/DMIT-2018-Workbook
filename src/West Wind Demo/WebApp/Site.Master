@@ -45,18 +45,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" runat="server" href="~/">West Wind Demo</a>
+                    <a class="navbar-brand" runat="server" href="~/" title="Home Page">West Wind Demo</a>
                 </div>
                 <div class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/OurProducts.aspx">Our Products</a></li>
 
                         <li runat="server" id="CustomerOrdersForm" visible="false"><a runat="server" href="~/Sales/CustomerOrderForm.aspx">Customer Order Form</a></li>
                         <li runat="server" id="CustomerOrderHistory" visible="false"><a runat="server" href="~/Customers/OrderHistory.aspx">Order History</a></li>
 
                         <li><a runat="server" href="~/About">About</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
                         <li id="StaffOnly" runat="server" visible="false">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin <span class="caret"></span></a>
                             <ul class="dropdown-menu">
