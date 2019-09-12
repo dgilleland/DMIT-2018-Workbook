@@ -30,6 +30,7 @@ namespace WestWindConsole.Entities
         public bool Active { get; set; }
 
         #region Not-Mapped Properties
+        // TODO: Demonstrate [NotMapped]
         // NotMapped properties are properties that exist on the Entity, but NOT in the Database
         [NotMapped]
         public string FullName
@@ -37,6 +38,7 @@ namespace WestWindConsole.Entities
         #endregion
 
         #region Navigation Properties
+        // TODO: Introducing Navigation Properties
         // Virtual properties in Entity Framework entities allow for "lazy loading"
         [ForeignKey(nameof(ReportsTo))]
         public virtual Employee Manager { get; set; }
