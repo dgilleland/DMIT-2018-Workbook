@@ -6,3 +6,4 @@ The examples listed here are organized by topic.
 - **Entity Framework**
   - [Entity Framework - Review & Expand](./EF6-Recap/ReadMe.md)
   - [Entity Framework - Code First](./EF6-Code-First/ReadMe.md)
+- [LINQ Introduction with LinqPad](./LinqPad/ReadMe.md)
