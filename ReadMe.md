@@ -10,7 +10,7 @@ The comprehensive example that demonstrates the topics in the course are found i
 
 - **Version Control** - [git and GitHub](src/VersionControl/)
 - **Entity Framework**
-  - Review - [West Wind Console](src/EF6%20Recap/)
+  - Review - [West Wind Console](src/EF6-Recap/)
   - Navigation Properties - [West Wind Console](src/EF6%20Recap/)
   - Transactions - [Eye-Max](src/Eye-Max/)
 - [**Databound Controls**](src/Databound%20Controls/)
