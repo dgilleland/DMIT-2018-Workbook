@@ -1,17 +1,38 @@
-# Code in Your Repository
+# Make Use of Issues
 
-- Create Issues:
-  - Proof-of-concept (reading from the API)
-  - Save .gitignore to file - `System.IO.File.WriteAllText(path, text)`
-    - `System.IO.File.ReadAllText` vs `.ReadAllLines`
-  - Command-line args
-    - [ ] List supported templates
-    - [ ] Display specific template
-    - [ ] Create .gitignore
-    - [ ] Interactive mode
-    - [ ] Help text
+```markdown
+Support various Command-line args for your app.
+
+- [ ] List supported templates
+- [ ] Display specific template
+- [ ] Create .gitignore
+- [ ] Interactive mode
+- [ ] Help text
+- [ ] Version
+```
+
+`repo list`
+`repo show visualstudio`
+`repo create windows visualstudio`
+`repo help`
+`repo version`
 
 ----
+
+## Overview
+
+In this tutorial, we covered the following.
+
+> ## Create Issues
+>
+> - Proof-of-concept (reading from the API)
+> - Save .gitignore to file - `System.IO.File.WriteAllText(path, text)`
+> - `System.IO.File.ReadAllText` vs `.ReadAllLines`
+> - Command-line args
+
+----
+
+## Complete Code
 
 ```csharp
 using System;
