@@ -16,7 +16,7 @@
  * 
  */
 
-// B) List all the Customers by Company Name. Include the Customer's company name, contact name, and other contact information in the result.
+// B) List all the Customers sorted by Company Name. Include the Customer's company name, contact name, and other contact information in the result.
 
 // C) List all the employees and sort the result in ascending order by last name, then first name. Show the employee's first and last name separately, along with the number of customer orders they have worked on.
 
