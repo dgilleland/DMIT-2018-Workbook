@@ -29,10 +29,8 @@ namespace WebApp.Sales
                 int? id = null;
                 if (Request.IsAuthenticated)
                 {
-                    var manager = Request.GetOwinContext().GetUserManager<ApplicationUserManager>();
-                    var appUser = manager.Users.SingleOrDefault(x => x.UserName == User.Identity.Name);
-                    if (appUser != null)
-                        id = appUser.EmployeeId;
+                    var controller = new SecurityController();
+                    id = controller.GetCurrentUserEmployeeId(User.Identity.Name);
                 }
                 return id;
             }
