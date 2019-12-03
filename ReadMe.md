@@ -4,29 +4,6 @@ This repository is a **Workbook Template Repository** (click the green *Use this
 
 Additionally, you can find online notes at the course's [Moodle site](https://moodle.nait.ca) and on the unofficial [website notes](https://dmit-2018.github.io). Also be sure to checkout out the topical [**Learning Outcomes**](https://dmit-2018.github.io/about/LOGs.html) used in class.
 
-## Outline
-
-The comprehensive example that demonstrates the topics in the course are found in the [West Wind Demo](src/West%20Wind%20Demo/) solution. Additional demos for the general topics in this workbook include the following.
-
-- **Version Control**
-  - [git and GitHub](src/VersionControl/)
-- **Entity Framework**
-  - Review - [West Wind Console](src/EF6-Recap/)
-  - Navigation Properties - [West Wind Console](src/EF6%20Recap/)
-  - Transactions - [Eye-Max](src/Eye-Max/)
-- [**Databound Controls**](src/Databound%20Controls/)
-  - GridView
-    - Customizing
-  - ListView
-    - [Bulk Editing](src/Capstone%20Teams/)
-  - Repeater
-- [**LINQ**](src/LinqPad/)
-- **CQRS**
-  - [Eye-Max](src/Eye-Max/)
-- **Security** - [ASP.Net Identity](src/Identity)
-- **UX and Forms**
-  - [Eye-Max](src/Eye-Max/)
-
 ----
 
 ## ![Software et.al.](./docs/images/code.png) Software & Resources

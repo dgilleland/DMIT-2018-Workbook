@@ -11,12 +11,12 @@ The examples listed here are organized by topic.
 ## Project Folders
 
 - [**Capstone-Teams**](Capstone-Teams/ReadMe.md)
-- [**Databound Controls**](Databound%20Controls/ReadMe.md)
+- [**Databound Controls**](Databound-Controls/ReadMe.md)
 - [**EF6-Code-First**](EF6-Code-First/ReadMe.md)
 - [**EF6-Recap**](EF6-Recap/ReadMe.md)
 - [**Eye-Max**](Eye-Max/ReadMe.md)
 - [**Identity**](Identity/ReadMe.md)
-- [**Language Review**](Language%20Review/ReadMe.md)
+- [**Language Review**](Language-Review/ReadMe.md)
 - [**LinqPad**](LinqPad/ReadMe.md)
 - [**VersionControl**](VersionControl/ReadMe.md)
-- [**West Wind Demo**](West%20Wind%20Demo/ReadMe.md)
+- [**West Wind Demo**](West-Wind-Demo/ReadMe.md)
