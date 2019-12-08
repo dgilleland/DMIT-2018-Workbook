@@ -16,6 +16,7 @@ namespace BackEnd.BLL
         #region In-Memory Database
         internal static Dictionary<string, Course> CourseDb = new Dictionary<string, Course>();
         internal static Dictionary<string, Dictionary<string, List<AssignedGrade>>> GradesDb = new Dictionary<string, Dictionary<string, List<AssignedGrade>>>();
+        public bool HasCourses => CourseDb.Any();
         #endregion
 
         #region Command Processing
@@ -164,6 +165,7 @@ namespace BackEnd.BLL
         #endregion
     }
 
+    #region Fake Entities
     public class AssignmentInfo
     {
         public string Name { get; set; }
@@ -186,4 +188,5 @@ namespace BackEnd.BLL
         public double EarnedMarks { get; set; }
         public int StudentID { get; set; }
     }
+    #endregion
 }

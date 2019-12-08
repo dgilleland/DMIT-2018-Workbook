@@ -12,9 +12,13 @@ namespace BackEnd.BLL
         public static void FakeItToMakeIt()
         {
             var controller = new StudentGradesController();
-            foreach(var course in GoodCourses)
+            if (!controller.HasCourses)
             {
-                controller.CreateCourse(course, 15, StandardEvaluations);
+                foreach (var course in GoodCourses)
+                {
+                    controller.CreateCourse(course, 15, StandardEvaluations);
+                }
+                PrePopulateCourses(controller);
             }
         }
 
@@ -39,6 +43,49 @@ namespace BackEnd.BLL
                 yield return new WeightedItem { AssignmentName = "Quiz 3", Weight = 25 };
                 yield return new WeightedItem { AssignmentName = "Project", Weight = 20 };
             }
+        }
+
+        static void PrePopulateCourses(StudentGradesController controller)
+        {
+            CourseOffering course = new CourseOffering("Web Design", new DateTime(2020, 1, 7));
+            List<WeightedItem> assignments = new List<WeightedItem>
+            {
+                new WeightedItem{ AssignmentName = "Quiz 1", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Quiz 2", Weight = 15 },
+                new WeightedItem{ AssignmentName = "Quiz 3", Weight = 20 },
+                new WeightedItem{ AssignmentName = "Assignments", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Lab 1", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Lab 2", Weight = 15 },
+                new WeightedItem{ AssignmentName = "Lab 3", Weight = 20 }
+            };
+            controller.CreateCourse(course, 15, assignments);
+
+            course = new CourseOffering("Database Fundamentals", new DateTime(2020, 1, 7));
+            assignments = new List<WeightedItem>
+            {
+                new WeightedItem{ AssignmentName = "Quiz 1", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Quiz 2", Weight = 15 },
+                new WeightedItem{ AssignmentName = "Quiz 3", Weight = 20 },
+                new WeightedItem{ AssignmentName = "Assignments", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Lab 1", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Lab 2", Weight = 15 },
+                new WeightedItem{ AssignmentName = "Lab 3", Weight = 20 }
+            };
+            controller.CreateCourse(course, 15, assignments);
+
+            course = new CourseOffering("Domain Driven Design", new DateTime(2020, 1, 7));
+            assignments = new List<WeightedItem>
+            {
+                new WeightedItem{ AssignmentName = "Quiz 1", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Quiz 2", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Quiz 3", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Quiz 4", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Quiz 5", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Lab 1", Weight = 10 },
+                new WeightedItem{ AssignmentName = "Lab 2", Weight = 15 },
+                new WeightedItem{ AssignmentName = "Lab 3", Weight = 25 }
+            };
+            controller.CreateCourse(course, 15, assignments);
         }
     }
 }

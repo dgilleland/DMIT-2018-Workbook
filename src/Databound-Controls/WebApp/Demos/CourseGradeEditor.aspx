@@ -4,6 +4,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+    <h1>Course Grade Editor</h1>
     <uc1:MessageUserControl runat="server" ID="MessageUserControl" />
     <div class="row">
         <div class="col-md-5">
@@ -64,8 +65,8 @@
             </asp:ListView>
             <asp:ObjectDataSource runat="server" ID="StudentMarkDataSource" OldValuesParameterFormatString="original_{0}" SelectMethod="ListStudentGrades" TypeName="BackEnd.BLL.StudentGradesController" OnSelected="StudentMarkDataSource_Selected">
                 <SelectParameters>
-                    <asp:ControlParameter ControlID="CourseDropDown" PropertyName="SelectedValue" Name="courseName" Type="String"></asp:ControlParameter>
-                    <asp:ControlParameter ControlID="AssignmentDropDown" PropertyName="SelectedValue" Name="assignmentName" Type="String"></asp:ControlParameter>
+                    <asp:ControlParameter ControlID="CourseDropDown" PropertyName="SelectedValue" Name="courseName" Type="String" DefaultValue="&quot;&quot;"></asp:ControlParameter>
+                    <asp:ControlParameter ControlID="AssignmentDropDown" PropertyName="SelectedValue" Name="assignmentName" Type="String" DefaultValue="&quot;&quot;"></asp:ControlParameter>
                 </SelectParameters>
             </asp:ObjectDataSource>
         </div>
