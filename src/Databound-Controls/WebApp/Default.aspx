@@ -26,17 +26,14 @@
                 TBA
             </p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                <a class="btn btn-default" href="#">Learn more &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
-            <h2>TBA</h2>
-            <p>
-                TBA
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
+            <h2>Other Demos</h2>
+            <ul>
+                <li>Transfer Data GridView to GridView <a class="btn btn-default" href="Demos/KaChingChing.aspx">Go &raquo;</a></li>
+            </ul>
         </div>
     </div>
 

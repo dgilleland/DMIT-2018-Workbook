@@ -153,6 +153,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Demos\CourseEditor.aspx" />
     <Content Include="Demos\CourseGradeEditor.aspx" />
+    <Content Include="Demos\KaChingChing.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -243,6 +244,13 @@
     </Compile>
     <Compile Include="Demos\CourseGradeEditor.aspx.designer.cs">
       <DependentUpon>CourseGradeEditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Demos\KaChingChing.aspx.cs">
+      <DependentUpon>KaChingChing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Demos\KaChingChing.aspx.designer.cs">
+      <DependentUpon>KaChingChing.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

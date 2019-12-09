@@ -64,6 +64,7 @@
     <Compile Include="BLL\Queries\CourseSummary.cs" />
     <Compile Include="BLL\StudentGradesController.cs" />
     <Compile Include="DataModels\BlackMarket\Ad.cs" />
+    <Compile Include="DataModels\BlackMarket\Vehicle.cs" />
     <Compile Include="DataModels\School\Assignment.cs" />
     <Compile Include="DataModels\BlackMarket\Item.cs" />
     <Compile Include="DataModels\BlackMarket\Member.cs" />
