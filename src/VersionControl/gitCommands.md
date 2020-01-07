@@ -28,7 +28,7 @@ Right now, your repository folder is empty (except for the hidden folder named *
 
 - **ReadMe.md** - In this file, you present key information about your repository for anyone using it. (***Note:** Treat all file names as case-sensitive, because git does.*)
 - **.gitignore** - Here, you identify the types of files that you do **not** want to "track" in your code repository; they can exist in your repository folder, but they will be ignored by default when it comes to commiting snapshots of your code.
-- **.gitattributes** - This file give git guidance on how to "normalize" certain text files for different operating systems.
+- **.gitattributes** - This file gives git guidance on how to "normalize" certain text files for different operating systems.
 
 ### Make the ReadMe file
 
