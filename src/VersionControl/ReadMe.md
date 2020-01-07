@@ -17,5 +17,6 @@ There are a number of learning resources created by GitHub and those in the GitH
 
 We use git repositories to store snapshots of our code as a regular part of developing software. Here, we expand on the last tutorial to make a simple C# console application to help with setting up our repositories with the `.gitignore` and `.gitattributes` files. This tutorial assumes that you already have a basic understanding of C# and object-oriented programming principles. [**Begin here...**](repo.md)
 
-## Using Branches
+## Using Branches ![Docs](https://img.shields.io/badge/Documentation%20Status-40--70%25%20Incomplete/Draft-orange?logo=Read%20the%20Docs)
 
+Git **branches** offer a way to work collaboratively while minimizing the chances of accidental merge conflicts that could stop your development in its tracks. [**Begin here...**](./branches/ReadMe.md)
