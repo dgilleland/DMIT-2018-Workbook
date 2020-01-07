@@ -4,15 +4,15 @@ In this tutorial, you will need [Visual Studio Code](https://code.visualstudio.c
 
 **git** is a program designed to work from the command line. As a command-line interface (CLI), every command will begin with `git` - the name of the program. In this tutorial, we will use the following git commands:
 
-- `git init` - This command is used to initialize (set up) a git repository in the current directory. When a git repository is set up, there will be a hidden folder named ".git" that contains all the history of commits for the repository.
-- `git status` - This command is used to give you the status of your code repository.
-- `git add .` - This command is used to stage un-tracked and modified files for a commit. If a file is not being tracked (and is not listed in .gitignore), this command will mark the file as a new item for the repository to track. If a file has been modified, then this command will mark it as ready to be committed.
-- `git commit -m "message"` - The commit command is used to save staged files to the repository. When a commit occurs, all of the files staged for committal are compared against the last commit, and the changes between them becomes the new commit. Additionally, the user is identified for the commit (typically by a user name and e-mail) - this is called blame.
-- `git log` - This command is used to display information on previous commits in your history.
-- `git remote -v` - This command is used to view the remote repositories referenced by your local machine.
-- `git remote add name uri` - This command is used to add a remote repository. Replace the `name` with a short identifier of your remote and the `uri` with the location of that remote repository.
-- `git push` - This command is used to take the local repository and send/merge it with a remote repository.
-- `git pull` - This command is used to get a remote repository and merge it with the local repository. Remote repositories are typically hosted online.
+- **`git init`** - This command is used to initialize (set up) a git repository in the current directory. When a git repository is set up, there will be a hidden folder named ".git" that contains all the history of commits for the repository.
+- **`git status`** - This command is used to give you the status of your code repository.
+- **`git add .`** - This command is used to stage un-tracked and modified files for a commit. If a file is not being tracked (and is not listed in .gitignore), this command will mark the file as a new item for the repository to track. If a file has been modified, then this command will mark it as ready to be committed.
+- **`git commit -m "message"`** - The commit command is used to save staged files to the repository. When a commit occurs, all of the files staged for committal are compared against the last commit, and the changes between them becomes the new commit. Additionally, the user is identified for the commit (typically by a user name and e-mail) - this is called blame.
+- **`git log`** - This command is used to display information on previous commits in your history.
+- **`git remote -v`** - This command is used to view the remote repositories referenced by your local machine.
+- **`git remote add name uri`** - This command is used to add a remote repository. Replace the `name` with a short identifier of your remote and the `uri` with the location of that remote repository.
+- **`git push`** - This command is used to take the local repository and send/merge it with a remote repository.
+- **`git pull`** - This command is used to get a remote repository and merge it with the local repository. Remote repositories are typically hosted online.
 
 ## Creating a Repository
 
