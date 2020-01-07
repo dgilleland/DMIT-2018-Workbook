@@ -20,7 +20,7 @@ In this tutorial, you will need [Visual Studio Code](https://code.visualstudio.c
 
 In VS Code, open a folder to work in, giving that folder a name of **Commanding the Console**. Then, press the **ctrl** + **`** key combination to open the terminal editor. In that editor, type the following git command:
 
-> ```ps
+> ```posh
 > git init
 > ```
 
@@ -43,7 +43,7 @@ This is a refresher of git and using git on the command line.
 
 Now, open the terminal (**ctrl** + **`**) and type the following command:
 
-> ```ps
+> ```posh
 > git status
 > ```
 
@@ -54,7 +54,7 @@ This identifies what files are new/modified/deleted in your repository and what 
 
 In the terminal, enter the following and note the difference in the result of checking the status of your repository.
 
-> ```ps
+> ```posh
 > git add ReadMe.md
 > git status
 > ```
@@ -63,7 +63,7 @@ In the terminal, enter the following and note the difference in the result of ch
 
 Now, commit the changes:
 
-> ```ps
+> ```posh
 > git commit -m "Created ReadMe file"
 > git status
 > ```
@@ -84,7 +84,7 @@ You're going to do the same with your `.gitattributes`. This time, go to [GitAtt
 
 Save a snapshot of all your changes. In the following code, note that I use a dot (`.`) in my `git add` statement. This is a "wildcard" that tells git to stage all the changes that have occurred in this folder and all subfolders.
 
-> ```ps
+> ```posh
 > git add .
 > git commit -m "Added .gitattributes and .gitignore"
 > ```
@@ -103,7 +103,7 @@ GitHub will inform you of steps you can follow to create content for your reposi
 
 You can view information on your remotes by entering the following in the terminal.
 
-> ```ps
+> ```posh
 > git remote -v
 > ```
 
@@ -122,7 +122,7 @@ Go back to your browser and refresh the page - you will see your uploaded conten
 
 At this point, your remote repository has changes that don't exist in your local repository. When synchronizing your local and remote repositories, you should always pull before you push. Issue a pull command in your terminal.
 
-> ```ps
+> ```posh
 > git pull
 > ```
 
@@ -134,7 +134,7 @@ Now, make some more changes to your local copy of the ReadMe file. Let's add an 
 
 Commit your changes, and then push them to the cloud.
 
-> ```ps
+> ```posh
 > git add ReadMe.md
 > git commit -m "Add thoughtful comic"
 > git push
