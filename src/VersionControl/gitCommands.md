@@ -34,7 +34,7 @@ Right now, your repository folder is empty (except for the hidden folder named *
 
 Let's begin with the **ReadMe.md** file. Create the file using the *File* menu or pressing **ctrl** + **n**. Inside the file, type the following markdown code.
 
-```md
+```markdown
 # Commanding the Console
 
 This is a refresher of git and using git on the command line.
