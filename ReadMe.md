@@ -1,4 +1,4 @@
-# DMIT-2018 - **Workbook** (Sep 2019)
+# DMIT-2018 - **Workbook** (Jan 2020)
 
 This repository is a **Workbook Template Repository** (click the green *Use this template* button above) containing demos, tutorials, and practice materials. You can find a list of the materials in the [**src folder**](./src/ReadMe.md).
 
