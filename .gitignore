@@ -1,6 +1,10 @@
 # General folder for non-trackable info
 [Nn]o[Tt]rack/
 
+# Instructor Patches
+
+[Ww]orkbook*.patch
+
 # VuePress
 .vuepress/dist/
 
