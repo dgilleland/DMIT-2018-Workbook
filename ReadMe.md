@@ -10,7 +10,7 @@ Additionally, you can find online notes at the course's [Moodle site](https://mo
 
 Recommended tools for this course include:
 
-- [Visual Studio 2019, Community Edition](https://visualstudio.microsoft.com/)
+- [Visual Studio 2019, Community Edition](https://visualstudio.microsoft.com/) (see [Notes]() on the minimum version)
 - [SQL Server 2019](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) or higher, **Developer Edition**
 - [Sql Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15#download-ssms) (*SSMS*)
 - [GitHub Desktop](https://desktop.github.com)
@@ -25,6 +25,16 @@ Other recommended resources include:
 Advanced resources outside the scope of this course include:
 
 - [Azure Developer Tools](https://azureforeducation.microsoft.com/devtools) - Sign in with your school-issued email address to get access to the free resources offered by Microsoft.
+
+----
+
+### VS 2019 Community
+
+You need to be running version 1.16.8 or higher of Visual Studio 2019. If you need to upgrade, launch the Visual Studio Installer and upgrade through that tool.
+
+![](./docs/images/vs-installer.png)
+
+![](./docs/images/vs-min-version.png)
 
 ----
 
