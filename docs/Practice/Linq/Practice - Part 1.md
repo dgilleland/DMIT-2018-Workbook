@@ -1,4 +1,3 @@
-<Query Kind="Expression" />
 
 // Practice questions - do each one in a separate LinqPad query.
 /*
