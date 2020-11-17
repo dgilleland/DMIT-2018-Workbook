@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebApp {
-    
-    
-    public partial class SiteMaster {
-        
+namespace WebApp
+{
+
+
+    public partial class SiteMaster
+    {
+
         /// <summary>
         /// CustomerOrdersForm control.
         /// </summary>
@@ -20,7 +22,7 @@ namespace WebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl CustomerOrdersForm;
-        
+
         /// <summary>
         /// CustomerOrderHistory control.
         /// </summary>
@@ -29,7 +31,7 @@ namespace WebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl CustomerOrderHistory;
-        
+
         /// <summary>
         /// StaffOnly control.
         /// </summary>
@@ -38,7 +40,7 @@ namespace WebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl StaffOnly;
-        
+
         /// <summary>
         /// DbInfo control.
         /// </summary>
@@ -47,7 +49,7 @@ namespace WebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Literal DbInfo;
-        
+
         /// <summary>
         /// DbProblems control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace WebApp {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label DbProblems;
-        
+
         /// <summary>
         /// MainContent control.
         /// </summary>

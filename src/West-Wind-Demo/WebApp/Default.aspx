@@ -17,7 +17,7 @@
             <uc1:BetaRelease runat="server" ID="BetaRelease" CssClass="bg-info" />
             <p>The following ERD represents the entire database schema.</p>
             <a href="/Images/Diagrams-WestWindERD.png" data-toggle="lightbox" data-title="West Wind ERD">
-                <img src="/Images/Diagrams-WestWindERD.svg" class="img-responsive" />
+                <img src="/Images/Diagrams-WestWindERD.svg" class="img-fluid" />
             </a>
         </div>
         <div class="col-md-6">
