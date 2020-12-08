@@ -1,9 +1,27 @@
-# General folder for non-trackable info
-[Nn]o[Tt]rack/
+# Zip files - Because we're using version control.
+## "Damn it Jim, I'm a repository, not a FTP site!
+.zip
+.zipx
+.rar
+.tar
+.7z
+.jar
+.ace
+.cab
+.gz
+.iso
+.msi
+.tgz
 
-# Instructor Patches
+# General folders for non-trackable info
+[Nn]o[Tt]rack/
+[Rr]n[Dd]/
+
+# Instructor Patches and custom tools
 
 [Ww]orkbook*.patch
+.snag  # Snag-It files
+.cr/   # Code-Rush
 
 # VuePress
 .vuepress/dist/

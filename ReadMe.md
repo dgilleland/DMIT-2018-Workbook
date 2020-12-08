@@ -8,13 +8,17 @@ Additionally, you can find online notes at the course's [Moodle site](https://mo
 
 ## ![Software et.al.](./docs/images/code.png) Software & Resources
 
+Required tools for this course include:
+
+- [Visual Studio 2019, Community Edition](https://visualstudio.microsoft.com/) (see [Notes](#vs-2019-community) on the minimum version)
+- [SQL Server 2019](https://www.microsoft.com/sql-server/sql-server-downloads) or higher, **Developer Edition**
+- [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15#download-ssms) (*SSMS*)
+
 Recommended tools for this course include:
 
-- [Visual Studio 2019, Community Edition](https://visualstudio.microsoft.com/) (see [Notes]() on the minimum version)
-- [SQL Server 2019](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) or higher, **Developer Edition**
-- [Sql Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15#download-ssms) (*SSMS*)
-- [GitHub Desktop](https://desktop.github.com)
-- [Visual Studio Code](https://code.visualstudio.com)
+- [~~GitHub Desktop~~](https://desktop.github.com)
+- [GitHub CLI](https://cli.github.com/) (*Command-Line Interface*)
+- [Visual Studio Code](https://code.visualstudio.com) (see [Notes]() on VS Code extensions)
 - Draw.io ([desktop](https://about.draw.io/integrations/#integrations_offline) and [online](https://draw.io) versions)
 
 Other recommended resources include:
@@ -30,11 +34,20 @@ Advanced resources outside the scope of this course include:
 
 ### VS 2019 Community
 
-You need to be running version 1.16.8 or higher of Visual Studio 2019. If you need to upgrade, launch the Visual Studio Installer and upgrade through that tool.
+You need to be running version 1.16.8 or higher of Visual Studio 2019 in order to use [**.Net 5.0**](https://dotnet.microsoft.com/platform/support/policy/dotnet-core). If you need to upgrade, launch the Visual Studio Installer and upgrade through that tool.
 
-![](./docs/images/vs-installer.png)
+| ![Launch VS Installer](./docs/images/vs-installer.png) | ![VS Install - Min VS2019 Version](./docs/images/vs-min-version.png) |
+|--------------------------------------------------------|----------------------------------------------------------------------|
 
-![](./docs/images/vs-min-version.png)
+You also should ensure you have the required workflows and components for this course.
+
+| Required Workflows | Recommended Workflows | Individual Components |
+|--------------------|-----------------------|-----------------------|
+| ![ASPNET and web development](./docs/images/vs-workload-asp-net-web.png) | ![Azure development](./docs/images/vs-workload-azure.png) | ![GH and LiveShare](./docs/images/vs-individual-components.png) |
+| ![Data storage and processing](./docs/images/vs-workload-data-storage.png) | ![.NET desktop development](./docs/images/vs-workload-net-desktop.png) | |
+| | ![Node.js development](./docs/images/vs-workload-node.png) | |
+| | ![Universal Windows Platform development](./docs/images/vs-workload-uwp.png) | |
+| | ![.NET Core cross-platform development](./docs/images/vs-workload-net-core-cross-platform.png) | |
 
 ----
 
