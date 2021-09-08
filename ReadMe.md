@@ -1,14 +1,26 @@
-# DMIT-2018 - **Workbook** (Jan 2020)
+# DMIT-2018 - **Workbook** (Sep 2021)
 
-This repository is a **Workbook Template Repository** (click the green *Use this template* button above) containing demos, tutorials, and practice materials. You can find a list of the materials in the [**src folder**](./src/ReadMe.md). Make use of the [**docs**](./docs/ReadMe.md) folder in journalling what you are learning through class.
+> **STUDENT_NAME** - Place your name in this line.
+
+This repository is your **Student Workbook** for participating in the in-class demos and for completing practice homework; the coding work is to be placed in the [*`src/`*](./src/ReadMe.md) folder. Learning Outcomes ([**LOGs**](./docs/logs/ReadMe.md)) and other useful notes can be found in the [**docs** folder](./docs), such as links to the [Reading Materials](./docs/Readings.md) for the course. Also, you are encouraged to use the [**docs/mynotes**](./docs/mynotes/ReadMe.md) folder to record your notes from each class.
+
+> :warning: **Do *NOT*** use this repository for any assignments that are worth marks. For work worth marks in this course, only use repositories set up/approved by your instructor. :warning:
 
 Additionally, you can find online notes at the course's [Moodle site](https://moodle.nait.ca) and on the unofficial [website notes](https://dmit-2018.github.io). Also be sure to checkout out the topical [**Learning Outcomes**](https://dmit-2018.github.io/about/LOGs.html) used in class.
 
 ----
 
+## ![Version Control](./docs/images/tasks.png) Version Control
+
+At the end of the term, your repositories on this [DMIT-2018 GitHub Organization](https://github.com/DMIT-2018) will be removed. You will still have access to your local versions of these repositories for your personal use and review.
+
+> :warning: **Do *NOT*** re-publish your assignment/assessment repositories - doing so with any materials worth marks is an act of academic dishonesty :warning:
+
+----
+
 ## ![Software et.al.](./docs/images/code.png) Software & Resources
 
-Required tools for this course include:
+**Required** books, videos, tools, etc. for this course include:
 
 - [Visual Studio 2019, Community Edition](https://visualstudio.microsoft.com/) (see [Notes](#vs-2019-community) on the minimum version)
 - [SQL Server 2019](https://www.microsoft.com/sql-server/sql-server-downloads) or higher, **Developer Edition**
@@ -16,7 +28,6 @@ Required tools for this course include:
 
 Recommended tools for this course include:
 
-- [~~GitHub Desktop~~](https://desktop.github.com)
 - [GitHub CLI](https://cli.github.com/) (*Command-Line Interface*)
 - [Visual Studio Code](https://code.visualstudio.com) (see [Notes]() on VS Code extensions)
 - Draw.io ([desktop](https://about.draw.io/integrations/#integrations_offline) and [online](https://draw.io) versions)
@@ -36,6 +47,8 @@ Advanced resources outside the scope of this course include:
 
 You need to be running version 1.16.8 or higher of Visual Studio 2019 in order to use [**.Net 5.0**](https://dotnet.microsoft.com/platform/support/policy/dotnet-core). If you need to upgrade, launch the Visual Studio Installer and upgrade through that tool.
 
+> The current version of VS 2019 at the start of this term is **16.11.2**
+
 | ![Launch VS Installer](./docs/images/vs-installer.png) | ![VS Install - Min VS2019 Version](./docs/images/vs-min-version.png) |
 |--------------------------------------------------------|----------------------------------------------------------------------|
 
@@ -50,23 +63,3 @@ You also should ensure you have the required workflows and components for this c
 | | ![.NET Core cross-platform development](./docs/images/vs-workload-net-core-cross-platform.png) | |
 
 ----
-
-### Badges
-
-Custom badges for indicating documentation status and code status are generated from the [**Shields.io**](https://Shields.io) website. Here are a few samples.
-
-> ![Docs](https://img.shields.io/badge/Documentation%20Status-100%25%20Complete-brightgreen?logo=Read%20the%20Docs)
->
-> ![Docs](https://img.shields.io/badge/Documentation%20Status-~90%25%20Mostly%20Complete-blue?logo=Read%20the%20Docs)
->
-> ![Docs](https://img.shields.io/badge/Documentation%20Status-~70%25%20+%20Usable-yellow?logo=Read%20the%20Docs)
->
-> ![Docs](https://img.shields.io/badge/Documentation%20Status-40--70%25%20Incomplete/Draft-orange?logo=Read%20the%20Docs)
->
-> ![Docs](https://img.shields.io/badge/Documentation%20Status-10--40%25%20Rough%20Outline-red?logo=Read%20the%20Docs)
->
-> ![Docs](https://img.shields.io/badge/Documentation%20Status-~10%25%20Minimal%20Outline-lightgrey?logo=Read%20the%20Docs)
->
-> ![Code](https://img.shields.io/badge/Code%20Status-Demo%20|%20Practice-blueviolet?logo=Visual%20Studio%20Code&labelColor=indigo)
->
-> ![Docs](https://img.shields.io/badge/Documentation%20Status-~70--90%25-green)
