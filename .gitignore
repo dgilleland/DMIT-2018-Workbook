@@ -1,3 +1,13 @@
+# General folders for non-trackable info
+[Nn]o[Tt]rack/
+[Rr]n[Dd]/
+
+# Instructor Patches and custom tools
+
+[Ww]orkbook*.patch
+.snag  # Snag-It files
+.cr/   # Code-Rush
+
 # Zip files - Because we're using version control.
 ## "Damn it Jim, I'm a repository, not a FTP site!
 .zip
@@ -13,23 +23,15 @@
 .msi
 .tgz
 
-# General folders for non-trackable info
-[Nn]o[Tt]rack/
-[Rr]n[Dd]/
-
-# Instructor Patches and custom tools
-
-[Ww]orkbook*.patch
-.snag  # Snag-It files
-.cr/   # Code-Rush
-
 # VuePress
 .vuepress/dist/
 
 # VSCode Workspace
 *.code-workspace
 
-# Created by https://www.gitignore.io/api/node,macos,windows,visualstudio,visualstudiocode
+
+# Created by https://www.toptal.com/developers/gitignore/api/node,macos,windows,visualstudio,visualstudiocode,microsoftoffice
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,macos,windows,visualstudio,visualstudiocode,microsoftoffice
 
 ### macOS ###
 # General
@@ -39,6 +41,7 @@
 
 # Icon must end with two \r
 Icon
+
 
 # Thumbnails
 ._*
@@ -59,6 +62,27 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+### MicrosoftOffice ###
+*.tmp
+
+# Word temporary
+~$*.doc*
+
+# Word Auto Backup File
+Backup of *.doc*
+
+# Excel temporary
+~$*.xls*
+
+# Excel Backup File
+*.xlk
+
+# PowerPoint temporary
+~$*.ppt*
+
+# Visio autosave temporary files
+*.~vsd*
+
 ### Node ###
 # Logs
 logs
@@ -66,6 +90,10 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
 pids
@@ -78,11 +106,12 @@ lib-cov
 
 # Coverage directory used by tools like istanbul
 coverage
+*.lcov
 
 # nyc test coverage
 .nyc_output
 
-# Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
+# Grunt intermediate storage (https://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
 
 # Bower dependency directory (https://bower.io/)
@@ -101,11 +130,20 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 
+# TypeScript cache
+*.tsbuildinfo
+
 # Optional npm cache directory
 .npm
 
 # Optional eslint cache
 .eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
 
 # Optional REPL history
 .node_repl_history
@@ -118,32 +156,59 @@ typings/
 
 # dotenv environment variables file
 .env
+.env.test
+.env*.local
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+.parcel-cache
 
-# next.js build output
+# Next.js build output
 .next
 
-# nuxt.js build output
+# Nuxt.js build / generate output
 .nuxt
+dist
+
+# Gatsby files
+.cache/
+# Comment in the public line in if your project uses Gatsby and not Next.js
+# https://nextjs.org/blog/next-9-1#public-directory-support
+# public
 
 # vuepress build output
 .vuepress/dist
 
 # Serverless directories
-.serverless
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
 
 ### VisualStudioCode ###
 .vscode/*
-!.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
-!.vscode/extensions.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
 
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
+Thumbs.db:encryptable
 ehthumbs.db
 ehthumbs_vista.db
 
@@ -173,6 +238,7 @@ $RECYCLE.BIN/
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
 # User-specific files
+*.rsuser
 *.suo
 *.user
 *.userosscache
@@ -181,6 +247,9 @@ $RECYCLE.BIN/
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+# Mono auto generated files
+mono_crash.*
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -188,10 +257,13 @@ $RECYCLE.BIN/
 [Rr]eleases/
 x64/
 x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
 bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+[Ll]ogs/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
@@ -205,9 +277,10 @@ Generated\ Files/
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
 
-# NUNIT
+# NUnit
 *.VisualState.xml
 TestResult.xml
+nunit-*.xml
 
 # Build Results of an ATL Project
 [Dd]ebugPS/
@@ -228,7 +301,7 @@ StyleCopReport.xml
 # Files built by Visual Studio
 *_i.c
 *_p.c
-*_i.h
+*_h.h
 *.ilk
 *.meta
 *.obj
@@ -243,8 +316,8 @@ StyleCopReport.xml
 *.tlb
 *.tli
 *.tlh
-*.tmp
 *.tmp_proj
+*_wpftmp.csproj
 *.vspscc
 *.vssscc
 .builds
@@ -286,9 +359,6 @@ _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
-# JustCode is a .NET coding add-in
-.JustCode
-
 # TeamCity is a build add-in
 _TeamCity*
 
@@ -298,6 +368,9 @@ _TeamCity*
 # AxoCover is a Code Coverage Tool
 .axoCover/*
 !.axoCover/settings.json
+
+# Coverlet is a free, cross platform Code Coverage Tool
+coverage*[.json, .xml, .info]
 
 # Visual Studio code coverage results
 *.coverage
@@ -346,6 +419,8 @@ PublishScripts/
 
 # NuGet Packages
 *.nupkg
+# NuGet Symbol Packages
+*.snupkg
 # The packages folder can be ignored because of Package Restore
 **/[Pp]ackages/*
 # except build/, which is used as an MSBuild target.
@@ -370,12 +445,14 @@ BundleArtifacts/
 Package.StoreAssociation.xml
 _pkginfo.txt
 *.appx
+*.appxbundle
+*.appxupload
 
 # Visual Studio cache files
 # files ending in .cache can be ignored
 *.[Cc]ache
 # but keep track of directories ending in .cache
-!*.[Cc]ache/
+!?*.[Cc]ache/
 
 # Others
 ClientBin/
@@ -419,6 +496,9 @@ ServiceFabricBackup/
 *.bim.layout
 *.bim_*.settings
 *.rptproj.rsuser
+*- [Bb]ackup.rdl
+*- [Bb]ackup ([0-9]).rdl
+*- [Bb]ackup ([0-9][0-9]).rdl
 
 # Microsoft Fakes
 FakesAssemblies/
@@ -453,12 +533,8 @@ paket-files/
 # FAKE - F# Make
 .fake/
 
-# JetBrains Rider
-.idea/
-*.sln.iml
-
-# CodeRush
-.cr/
+# CodeRush personal settings
+.cr/personal
 
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
@@ -498,5 +574,13 @@ ASALocalRun/
 # Local History for Visual Studio
 .localhistory/
 
+# BeatPulse healthcheck temp database
+healthchecksdb
 
-# End of https://www.gitignore.io/api/node,macos,windows,visualstudio,visualstudiocode
+# Backup folder for Package Reference Convert tool in Visual Studio 2017
+MigrationBackup/
+
+# Ionide (cross platform F# VS Code tools) working folder
+.ionide/
+
+# End of https://www.toptal.com/developers/gitignore/api/node,macos,windows,visualstudio,visualstudiocode,microsoftoffice
