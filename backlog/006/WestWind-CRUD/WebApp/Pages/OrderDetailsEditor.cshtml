@@ -1,0 +1,147 @@
+﻿@page "{OrderDetailId?}"
+@model OrderDetailsEditorModel
+@{
+}
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<h1>Order Details Editor</h1>
+@if (!Model.OrderDetailId.HasValue)
+{
+    <h2>Search for Order Detail</h2>
+    <style>
+        form > fieldset label:not(:first-child) {
+            margin-top: 0;
+        }
+
+        form > fieldset, section {
+            display: grid;
+            grid-template-columns: 2fr 2fr 4fr;
+        }
+
+            section > blockquote {
+                font-weight: bold;
+            }
+
+        blockquote {
+            margin: 0;
+        }
+    </style>
+    <form method="post">
+        <fieldset>
+            <label>
+                Customer Selection
+                <select asp-items="Model.Customers" asp-for="SelectedCustomer">
+                    <option value=''>[Select a Customer]</option>
+                </select>
+            </label>
+            <label>
+                Partial Product Name
+                <input type='text' asp-for='PartialProductName' />
+            </label>
+            <div>
+                Begin by identifying the customer and the product.
+                <button type="submit" asp-page-handler="NarrowResults">Narrow Results</button>
+            </div>
+        </fieldset>
+    </form>
+    @if (!Model.OrderDetails.Any())
+    {
+        <blockquote>No matching order details for the given customer/product.</blockquote>
+    }
+    else
+    {
+        <section>
+            <blockquote>Order ID</blockquote>
+            <blockquote>Product Detail</blockquote>
+            <blockquote>Action</blockquote>
+            @foreach (var detail in Model.OrderDetails)
+            {
+                <div>@detail.OrderId</div>
+                <div>@detail.Product.ProductName (qty: @detail.Quantity)</div>
+                <div>
+                    <form method="post" asp-page-handler="SelectOrderDetail">
+                        <input type="hidden" asp-for="OrderDetailId" value="@detail.OrderDetailId" />
+                        <button type="submit">Edit this item</button>
+                    </form>
+                </div>
+            }
+        </section>
+    }
+    <hr>
+}
+
+<h2>Order Detail Item</h2>
+
+<p style="color:blue; font-weight: bold;">@Model.PostRedirectFeedback</p>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <p style="color:red; font-weight: bold;">@Model.ErrorMessage</p>
+}
+
+<form method="POST">
+    @if (Model.OrderDetailId.HasValue)
+    {
+        <button type="submit" asp-page-handler="Add" disabled>Add Order Detail</button>
+        <button type="submit" asp-page-handler="Update">Update Order Detail</button>
+        <button type="submit" asp-page-handler="Delete" onclick="return confirm('Are you sure you want to delete this order?')">Delete Order Detail</button>
+        <button type="submit" asp-page-handler="ClearForm" onclick="return confirm('Are you sure you want to clear this form?')">Clear Form</button>
+    }
+    else
+    {
+        <button type="submit" asp-page-handler="Add">Add Order Detail</button>
+        <button type="submit" asp-page-handler="Update" disabled>Update Order Detail</button>
+        <button type="submit" asp-page-handler="Delete" disabled onclick="return confirm('Are you sure you want to delete this order?')">Delete Order Detail</button>
+    }
+
+    <br>
+    <label>
+        Order Detail ID <i>(automatically generated)</i>
+        <input type='number' asp-for='OrderDetailId' disabled />
+    </label>
+
+    <label>
+        Order
+        <span asp-validation-for="OrderItem.OrderId" style="color:red;"></span>
+        <input type='text' asp-for='OrderItem.OrderId' list="customerOrders" />
+        <datalist id='customerOrders'>
+            @foreach (var item in Model.CustomerOrders)
+            {
+                <option value='@item.Value'>@item.Text</option>
+            }
+        </datalist>
+    </label>
+
+    <label>
+        Product
+        <span asp-validation-for="OrderItem.ProductId" style="color:red;"></span>
+        <input type='text' asp-for='OrderItem.ProductId' list="products" />
+        <datalist id='products'>
+            @foreach (var item in Model.Products)
+            {
+                <option value='@item.Value'>@item.Text</option>
+            }
+        </datalist>
+    </label>
+
+    <label>
+        Unit Price
+        <span asp-validation-for="OrderItem.UnitPrice" style="color:red;"></span>
+        <input type='number' step=".0001" asp-for='OrderItem.UnitPrice' />
+    </label>
+
+    <label>
+        Quantity
+        <span asp-validation-for="OrderItem.Quantity" style="color:red;"></span>
+        <input type='number' step="1" asp-for='OrderItem.Quantity' />
+    </label>
+
+    <label>
+        Discount
+        <span asp-validation-for="OrderItem.Discount" style="color:red;"></span>
+        <input type='number' step=".01" asp-for='OrderItem.Discount' />
+    </label>
+</form>

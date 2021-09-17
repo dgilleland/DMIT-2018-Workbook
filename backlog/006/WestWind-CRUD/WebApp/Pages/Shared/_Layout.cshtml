@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApp</title>
+    <link href="https://cdn.jsdelivr.net/npm/d0css@1/dist/d0.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://kit.fontawesome.com/7aa9f58d01.js" defer crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a asp-area="" asp-page="/Index">WebApp</a></li>
+                <li><a asp-area="" asp-page="/Index">Home</a></li>
+                <li><a asp-area="" asp-page="/Privacy">Privacy</a></li>
+                <li>
+                    <a href="#">CRUD Forms</a>
+                    <ul>
+                        <li><a asp-area="" asp-page="/ViewProductCatalog">Product Catalog</a></li>
+                        <li><a asp-area="" asp-page="/ProductEditor">Product Editor</a></li>
+                        <li><a asp-area="" asp-page="/OrderEditor">Order Editor</a></li>
+                        <li><a asp-area="" asp-page="/OrderDetailsEditor">Order Details Editor</a></li>
+                    </ul>
+                </li>
+                <partial name="_LoginPartial" />
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer>
+        <div>
+            &copy; 2021 - WebApp - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

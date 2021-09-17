@@ -1,0 +1,73 @@
+﻿@page
+@model WebApp.Pages.ViewProductCatalogModel
+@{
+}
+
+<h1>Product Catalog</h1>
+
+<form method="get" action="/ProductEditor">
+    <button type="submit">New Product...</button>
+</form>
+
+<form method="get">
+    <label>
+        Partial Product Name
+        <input type="search" asp-for="PartialName" />
+    </label>
+    <button type="submit">Filter Results</button>
+</form>
+
+@if (string.IsNullOrEmpty(Model.PartialName))
+{
+    <p>Enter a partial product name first.</p>
+}
+else
+{
+    <p>Showing the @Model.Paging.TotalItemCount products that contain the partial name of "@Model.PartialName".</p>
+}
+
+<table class="table table-hover">
+    <tr>
+        <td>Action</td>
+        <td>Name</td>
+        <td>Quantity Per Unit</td>
+        <td>Price</td>
+        <td>Supplier</td>
+        <td>Category</td>
+    </tr>
+    @{
+        // Loop through the products to create each row
+        foreach (var item in Model.Catalog.Items)
+        {
+            <tr>
+                <td><a asp-page="ProductEditor" asp-route-id="@item.ProductId">Edit</a></td>
+                <td>@item.ProductName</td>
+                <td>@item.QuantityPerUnit</td>
+                <td>@item.UnitPrice.ToString("C")</td>
+                <td>@item.Supplier.CompanyName</td>
+                <td>@item.Category.CategoryName</td>
+            </tr>
+        }
+    }
+    <tfoot>
+        <tr>
+            <td colspan="3">
+                @{
+                    foreach (var pageRef in Model.Paging)
+                    {
+                        if (pageRef == Model.Paging.CurrentPage) // I can use the == because of PageRef type being a C# 9 record type
+                        {
+                            <b>@pageRef.Text</b>
+                        }
+                        else
+                        {
+                            <a title="Page @pageRef.Page" asp-page="/ViewProductCatalog"
+                               asp-route-currentpage="@pageRef.Page" asp-route-partialname="@Model.PartialName">@pageRef.Text</a>
+                        }
+                    }
+                }
+
+            </td>
+        </tr>
+    </tfoot>
+</table>

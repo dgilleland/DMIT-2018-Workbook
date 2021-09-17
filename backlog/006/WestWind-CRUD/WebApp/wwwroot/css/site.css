@@ -1,0 +1,70 @@
+﻿footer {
+    margin: 1em auto 0 auto;
+    padding: 1.25em 1em;
+    background-color: var(--bg-pane);
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+main {
+    max-width: initial;
+}
+
+/*Adaptations from awsm.css*/
+fieldset {
+    padding: .5em 1em;
+    border: 1px solid #aaa;
+}
+
+form label:not(:first-child) {
+    margin-top: 1em;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form label, form select, form input, output {
+    display: block;
+}
+
+form input[type=checkbox] {
+    display: inline-block;
+}
+
+form dialog {
+    position: relative;
+    margin: 0;
+}
+
+dialog input {
+    display: inline-block;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+dialog input {
+    display: inline-block;
+    margin-right: 0;
+    padding-right: 0;
+    font-weight: normal;
+    font-style: italic;
+}
+
+    dialog input + button[type=submit] {
+        color: black;
+        background-color: transparent;
+        padding: 0;
+        margin: 0;
+        border: 0;
+    }
+
+label input, label select, label > label, label * {
+    font-weight: normal;
+}
+
+label > input[type=checkbox] + label {
+    display: inline-block;
+    font-weight: normal;
+}
+
