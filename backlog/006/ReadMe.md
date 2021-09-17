@@ -6,7 +6,7 @@
 
 ## West Wind Wholesale
 
-The **ASP.NET Core *Web Application*** solution in this lesson illustrates the limitations of building a website round basic CRUD behaviours.
+The **ASP.NET Core *Web Application*** solution in this lesson illustrates the limitations of building a website around basic CRUD behaviours.
 
 Imagine that we've received an email from one of our customers asking to place an order.
 
