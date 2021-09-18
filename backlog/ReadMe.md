@@ -23,7 +23,12 @@ The folders here represent distinct demos and practice materials as referenced i
 - [014](./014/ReadMe.md) - TBA - Customer Orders - Implementation
 - [015](./015/ReadMe.md) - TBA - Suppliers & Order Fulfillment - Implementation (*practice*) - (see Sep 2020 term)
 - [016](./016/ReadMe.md) - TBA - **Security**
-- [017](./017/ReadMe.md) - TBA
+- [017](./017/ReadMe.md) - TBA - Resolving Merge Conflicts
 - [018](./018/ReadMe.md) - TBA
 - [019](./019/ReadMe.md) - TBA
 - [020](./020/ReadMe.md) - TBA
+
+## Future Demos
+
+- Eye-Max
+- Capstone-Teams
