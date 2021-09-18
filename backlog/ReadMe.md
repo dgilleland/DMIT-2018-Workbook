@@ -32,3 +32,5 @@ The folders here represent distinct demos and practice materials as referenced i
 
 - Eye-Max
 - Capstone-Teams
+- Hire-Learning
+- State-Registration
