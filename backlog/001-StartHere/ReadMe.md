@@ -1,4 +1,4 @@
-# Start Here
+# Start Here ![Code](https://img.shields.io/badge/Code%20Status-Walkthrough-blueviolet?logo=Visual%20Studio%20Code&labelColor=indigo)
 
 1. Edit the `ReadMe.md` file at the root of this repository to enter your name in the space provided.
 1. Under the [*`docs/mynotes`*](../../docs/mynotes/) folder, create a new file called `Journal.md`. In it, enter the following.

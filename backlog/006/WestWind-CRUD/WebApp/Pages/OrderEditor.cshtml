@@ -1,0 +1,151 @@
+﻿@page "{id?}"
+@model OrderEditorModel
+@{
+}
+<style>
+    main {
+        column-count: 2;
+        column-rule-color: black;
+        column-rule-style: solid;
+        column-rule-width: thin;
+    }
+
+        main > h1 {
+            column-span: all;
+        }
+
+        main > section:first-of-type {
+            break-after: column;
+        }
+</style>
+<h1>Order Editor</h1>
+
+<section>
+    <h2>Order Information</h2>
+
+    <p style="color:blue; font-weight: bold;">@Model.Feedback</p>
+
+    @if (!string.IsNullOrEmpty(Model.ErrorMessage))
+    {
+        <p style="color:red; font-weight: bold;">@Model.ErrorMessage</p>
+    }
+
+    <form method="POST">
+        @if (Model.CurrentOrder != null && Model.CurrentOrder.OrderId != 0)
+        {
+            <button type="submit" asp-page-handler="Add" disabled>Add Order</button>
+            <button type="submit" asp-page-handler="Update">Update Order</button>
+            <button type="submit" asp-page-handler="Delete" onclick="return confirm('Are you sure you want to delete this order?')">Delete Order</button>
+            <button type="submit" asp-page-handler="ClearForm" onclick="return confirm('Are you sure you want to clear this form?')">Clear Form</button>
+        }
+        else
+        {
+            <button type="submit" asp-page-handler="Add">Add Order</button>
+            <button type="submit" asp-page-handler="Update" disabled>Update Order</button>
+            <button type="submit" asp-page-handler="Delete" disabled>Delete Order</button>
+        }
+
+        <div asp-validation-summary="All" style="color:red;">
+            <span>Please correct the following errors</span>
+        </div>
+        <style>
+            .validation-summary-valid span {
+                display: none;
+            }
+        </style>
+
+        <label>
+            Order ID <i>(automatically generated)</i>
+            <input type='number' asp-for='OrderId' disabled />
+        </label>
+
+        <label>
+            Sales Rep
+            <select asp-items='Model.Employees' asp-for='CurrentOrder.SalesRepId'>
+                <option value=''>[Select an Employee]</option>
+            </select>
+        </label>
+
+        <label>
+            Customer
+            <span asp-validation-for="CurrentOrder.CustomerId" style="color:red;"></span>
+            <select asp-items='Model.Customers' asp-for='CurrentOrder.CustomerId' required>
+                <option value=''>[Select a Customer]</option>
+            </select>
+        </label>
+
+        <label>
+            Order Date
+            <input type='Date' asp-for='CurrentOrder.OrderDate' />
+        </label>
+
+        <label>
+            Required Date
+            <input type='Date' asp-for='CurrentOrder.RequiredDate' />
+        </label>
+
+        <label>
+            Payment Due Date
+            <input type='Date' asp-for='CurrentOrder.PaymentDueDate' />
+        </label>
+
+        <label>
+            Freight
+            <input type='number' step=".01" asp-for='CurrentOrder.Freight' />
+        </label>
+
+        <label>
+            Shipped
+            <label>
+                <input type='checkbox' asp-for='CurrentOrder.Shipped' />
+                Products have been delivered
+            </label>
+        </label>
+
+        <label>
+            Ship Name
+            <input type='text' asp-for='CurrentOrder.ShipName' />
+        </label>
+
+        <label>
+            Ship-To Address
+            <datalist id="MatchingAddresses">
+                @foreach (var match in Model.Addresses)
+                {
+                    <option value="@match.Value">@match.Text</option>
+                }
+            </datalist>
+            <input type="number" asp-for="CurrentOrder.ShipAddressId" list="MatchingAddresses" placeholder="ID #" />
+        </label>
+        <dialog open="true" title="Search a partial address to get a data list of IDs">
+            <input type="search" asp-for='PartialAddress' placeholder="Partial Address" />
+            <button type="submit" formnovalidate asp-page-handler="SearchAddress"><i class="fas fa-search"></i></button>
+        </dialog>
+
+        <label>
+            Comments
+            <textarea asp-for='CurrentOrder.Comments'></textarea>
+        </label>
+    </form>
+</section>
+
+<section>
+    <h2>Search for Order</h2>
+
+    <form method="POST">
+        <label>
+            Customer
+            <select asp-items='Model.Customers' asp-for='SelectedCustomer'>
+                <option value=''>[Select a Customer]</option>
+            </select>
+            <button type='submit' asp-page-handler='SearchCustomerOrders'>Search Customer Orders</button>
+        </label>
+        <label>
+            Customer Orders
+            <select asp-items='Model.OpenOrders' asp-for='SelectedOrder'>
+                <option value=''>[Select an order]</option>
+            </select>
+            <button type='submit' asp-page-handler='LookupOrder'>Lookup Order</button>
+        </label>
+    </form>
+</section>

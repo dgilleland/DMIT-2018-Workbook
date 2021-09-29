@@ -1,0 +1,103 @@
+﻿@page "{id?}"
+@model WebApp.Pages.ProductEditorModel
+@{
+}
+
+@section scripts{
+    <partial name="_ValidationScriptsPartial" />
+}
+
+<h1>Product Editor</h1>
+
+<p style="color:blue; font-weight: bold;">@Model.FeedbackMessage</p>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <p style="color:red; font-weight: bold;">@Model.ErrorMessage</p>
+}
+
+<form method="post">
+    <button type="submit" asp-page-handler="Add">Add Product</button>
+    @if (Model.ProductItem != null)
+    {
+        <button type="submit" asp-page-handler="Update">Update Product</button>
+        <button type="submit" asp-page-handler="Delete" onclick="return confirm('Are you sure you want to delete this product?')">Delete Product</button>
+    }
+    else
+    {
+        <button type="submit" asp-page-handler="Update" disabled>Update Product</button>
+        <button type="submit" asp-page-handler="Delete" disabled>Delete Product</button>
+    }
+    <button type="submit" formnovalidate asp-page-handler="Cancel">Cancel</button>
+
+    <div asp-validation-summary="All"  style="color:red;">
+        <span>Please correct the following errors</span>
+    </div>
+    <style>
+        .validation-summary-valid span {
+            display: none;
+        }
+    </style>
+
+    <label>
+        Product ID
+        <input type="number" asp-for="Id" disabled />
+    </label>
+
+    <label>
+        Product Name
+        <span asp-validation-for="ProductItem.ProductName" style="color:red;"></span>
+        <input type="text" asp-for="ProductItem.ProductName" />
+    </label>
+
+    <label>
+        Supplier
+        <span asp-validation-for="ProductItem.SupplierId" style="color:red;"></span>
+        <select asp-items="Model.Suppliers" asp-for="ProductItem.SupplierId">
+            <option value="">[Pick a Supplier]</option>
+        </select>
+    </label>
+
+    <label>
+        Category
+        <span asp-validation-for="ProductItem.CategoryId" style="color:red;"></span>
+        <select asp-for="ProductItem.CategoryId">
+            <option value="">[Pick a Category]</option>
+            @{
+                foreach (var item in Model.Categories)
+                {
+                    <option value="@item.CategoryId">@item.Description</option>
+                }
+            }
+        </select>
+    </label>
+
+    <label>
+        Quantity per Unit
+        <span asp-validation-for="ProductItem.QuantityPerUnit" style="color:red;"></span>
+        <input type="text" asp-for="ProductItem.QuantityPerUnit" />
+    </label>
+
+    <label>
+        Unit Price
+        <span asp-validation-for="ProductItem.UnitPrice" style="color:red;"></span>
+        <input type="number" step=".0001" asp-for="ProductItem.UnitPrice" />
+    </label>
+
+    <label>
+        Minimum Order Quantity
+        <span asp-validation-for="ProductItem.MinimumOrderQuantity" style="color:red;"></span>
+        <input type="number" step="1" asp-for="ProductItem.MinimumOrderQuantity" />
+    </label>
+
+    <label>
+        Units on Order
+        <span asp-validation-for="ProductItem.UnitsOnOrder" style="color:red;"></span>
+        <input type="number" step="1" asp-for="ProductItem.UnitsOnOrder" />
+    </label>
+
+    <label>
+        Discontinued
+        <label><input type="checkbox" asp-for="ProductItem.Discontinued" /> Is Discontinued</label>
+    </label>
+</form>
