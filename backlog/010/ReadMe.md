@@ -13,6 +13,13 @@
 > - [ ] LINQ Query Syntax - See [the demos](./Linq-QuerySyntax)
 > - [ ] LINQ Method Syntax
 
+----
+
+## LINQ Documentation
+
+There is a lot of documentation on Microsoft's site for [**Querying data**](https://docs.microsoft.com/en-us/ef/core/querying/) from EF Core. The articles under this heading are recommended readings, especially "Overview", "Client vs. server evaluation", "Query tags", and "How queries work".
+
+![Querying Data](./images/EFCoreQueryData.png)
 
 ----
 
