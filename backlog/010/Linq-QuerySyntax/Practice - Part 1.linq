@@ -1,6 +1,6 @@
 <Query Kind="Expression" />
 
-// Practice questions - do each one in a separate LinqPad query. Using the WestWind database.
+// Practice questions - do each one in a separate LinqPad (.linq) file. Using the WestWind database.
 /*
 
 A) List all the customer company names for those with more than 5 orders.

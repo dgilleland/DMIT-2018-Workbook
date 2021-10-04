@@ -1,6 +1,6 @@
 <Query Kind="Expression" />
 
-// Practice questions - do each one in a separate LinqPad query.
+// Practice questions - do each one in a separate LinqPad (.linq) file.
 
 // A) Group employees by region and show the results in this format:
 /* ----------------------------------------------
