@@ -26,7 +26,7 @@ The folders here represent distinct demos and practice materials as referenced i
 - [090](./090/ReadMe.md) - TBA - Suppliers & Order Fulfillment - Implementation (*practice*) - (see Sep 2020 term)
 - [100](./100/ReadMe.md) - TBA - **Security**
 - [110](./110/ReadMe.md) - TBA - Resolving Merge Conflicts
-- [120](./120/ReadMe.md) - TBA
+- [120](./120/ReadMe.md) - TBA - [Publishing](#publishing)
 - [130](./130/ReadMe.md) - TBA
 - [140](./140/ReadMe.md) - TBA
 
@@ -36,3 +36,14 @@ The folders here represent distinct demos and practice materials as referenced i
 - Capstone-Teams
 - Hire-Learning
 - State-Registration
+
+----
+
+## Publishing
+
+> 1.  **Web Deploy** - If you have IIS on server machine running and configured to receive Web Deploy requests, it will send all requested by IIS files. IIS will immediately start running new web page.
+> 2.  **Web Deploy Package** - If you have IIS on server machine running and configured to receive a Web Deploy Package it will pack your whole web page, and will upload them to server machine. IIS will immediately start running new web page.
+> 3.  **FTP** will upload files to FTP server (can be any OS that handles FTP), but be aware that this is **NOT** safe and whole upload process can be captured and compromised.
+> 4.  **File system** will deploy all items required for launching a web service, with any method supported by current project configuration, into provided directory on your machine.
+> 
+> *Source: https://stackoverflow.com/a/42660168/191885
