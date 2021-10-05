@@ -20,4 +20,4 @@
 > Credits:
 >
 > - Individual State Maps: https://gisgeography.com/state-outlines-blank-maps-united-states/
-> - USA/Canada Map: http://holidaymapq.com/map-of-u-s-and-canada/
+> - USA/Canada Map: https://www.freeusandworldmaps.com/images/USPrintable/USACanadaPrintText.jpg
