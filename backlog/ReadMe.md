@@ -15,15 +15,16 @@ The folders here represent distinct demos and practice materials as referenced i
 - [005](./005/ReadMe.md) - **English/Klingon Dictionary**
 - [006](./006/ReadMe.md) - **Awww CRUD**
 - [010](./010/ReadMe.md) - **LINQ** *(multi-class lesson)*
-- [020](./020/ReadMe.md) - TBA - Planning and Documentation ***How-To*** - [**Design Plan**](https://dmit-2018.github.io/demos/Northwind/CustomerOrders/Design.html#selecting-a-customer) sample
-- [030](./030/ReadMe.md) - TBA - Implementation - Boilerplate Setup
+- [020](./020/ReadMe.md) - TBA - Implementation - Boilerplate Setup
   - *Combine with the next one on styling?*
-- [040](./040/ReadMe.md) - TBA - Razor Pages Setup and Styling
-- [050](./050/ReadMe.md) - TBA - Reverse Engineering Databases - Internal Classes - **`public interface IWestWindRepository`**
-- [060](./060/ReadMe.md) - TBA - Configuring Services & Dependency Injection - About Page w. Database Version - ***Practice:** Contact Page with staff information* - ***Advanced Practice:** Make an Org Chart based on `ReportsTo` information*
-- [070](./070/ReadMe.md) - TBA - Product Catalog - Implementation
-- [080](./080/ReadMe.md) - TBA - Customer Orders - Implementation
-- [090](./090/ReadMe.md) - TBA - Suppliers & Order Fulfillment - Implementation (*practice*) - (see Sep 2020 term)
+  - [040](./040/ReadMe.md) - TBA - Razor Pages Setup and Styling
+  - [050](./050/ReadMe.md) - TBA - Reverse Engineering Databases - Internal Classes - **`public interface IWestWindRepository`**
+  - [060](./060/ReadMe.md) - TBA - Configuring Services & Dependency Injection - About Page w. Database Version - ***Practice:** Contact Page with staff information* - ***Advanced Practice:** Make an Org Chart based on `ReportsTo` information*
+  - [070](./070/ReadMe.md) - TBA - Product Catalog - Implementation
+  - [080](./080/ReadMe.md) - TBA - Customer Orders - Implementation
+  - [090](./090/ReadMe.md) - TBA - Suppliers & Order Fulfillment - Implementation (*practice*) - (see Sep 2020 term)
+- [030](./030/ReadMe.md) - TBA - Planning and Documentation ***How-To*** - [**Design Plan**](https://dmit-2018.github.io/demos/Northwind/CustomerOrders/Design.html#selecting-a-customer) sample
+  - [Wireframe Examples](https://cacoo.com/blog/10-must-see-wireframe-examples-inspire-next-design/)
 - [100](./100/ReadMe.md) - TBA - **Security**
 - [110](./110/ReadMe.md) - TBA - Resolving Merge Conflicts
 - [120](./120/ReadMe.md) - TBA - [Publishing](#publishing)
